@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>~ tux4life</title>
+</head>
+<body bgcolor="#19181c">
+<center>
+<div class="r">
+<button onclick="window.location.href = ('settings.html');" class="nobg"><img height="30" src="https://cdn3.emoji.gg/emojis/5970-quicksettings.png"></button>
+</div>
+<br><br><br>
+
+<div class="browser">
+<img height="100" src="tux.png">
+<br><br>
+<span class="title">tux4life</span>
+<br>
+<span class="title"><font color="limegreen">open source browser</font></span>
+<br><br>
+<form action="https://searx.thegpm.org/">
+<input class="input" name="q" type="text"><input type="submit" value="OK">
+</form>
+</div>
+<div id="stuff" class="kisayol">
+<button onclick="window.location.href = ('index.html');" class="nobg"><img height="30" src="https://cdn3.emoji.gg/emojis/6007-home.png"></button>
+<button onclick="window.location.href = ('https://google.com');" class="nobg"><img height="30" src="https://cdn3.emoji.gg/emojis/8610-va-google.png"></button>
+<button onclick="window.location.href = ('https://steampowered.com');" class="nobg"><img height="30" src="https://cdn3.emoji.gg/emojis/1303-steam.png"></button>
+<button onclick="window.location.href = ('https://twitch.com');" class="nobg"><img height="30" src="https://cdn3.emoji.gg/emojis/2160-twitch-logo.png"></button>
+<button onclick="window.location.href = ('https://github.com');" class="nobg"><img height="30" src="https://cdn3.emoji.gg/emojis/6705-githubblack.png"></button>
+<button onclick="window.location.href = ('https://discord.com');" class="nobg"><img height="30" src="https://cdn3.emoji.gg/emojis/9255-discord.png"></button>
+<button onclick="window.location.href = ('https://toggcusitesi.000webhostapp.com/');" class="nobg"><img height="30" src="https://cdn3.emoji.gg/emojis/3636-togg.png"></button>
+
+<br>
+</div>
+<br><br>
+<button onclick="gizleGoster();" class="nobg"><img height="30" id="image" src="https://cdn3.emoji.gg/emojis/8925-spectator.png"></button>
+
+</center>
+<script>
+function gizleGoster(stuff) {
+  var stuff = document.getElementById('stuff');
+  if (stuff.style.display == "none") {
+    stuff.style.display = "";
+    document.getElementById('image').src='https://cdn3.emoji.gg/emojis/8925-spectator.png';
+  } else {
+    stuff.style.display = "none";
+    document.getElementById('image').src='https://cdn3.emoji.gg/emojis/2011-private.png';
+  }
+}
+
+</script>
+<style>
+.r {
+  position:absolute;
+  right:1%;
+}
+.title {
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+}
+.nobg {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+</style>
+</body>
+</html>
